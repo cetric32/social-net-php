@@ -36,24 +36,24 @@ echo "
 ";
 
 if($loggedin){
-    echo '
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#">Dovet</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+    echo "
+    <nav class='navbar navbar-expand-lg navbar-light bg-light'>
+    <a class='navbar-brand' href='#'>Dovet</a>
+    <button class='navbar-toggler' type='button' data-toggle='collapse' data-target='#navbarNavAltMarkup' aria-controls='navbarNavAltMarkup' aria-expanded='false' aria-label='Toggle navigation'>
+        <span class='navbar-toggler-icon'></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav">
-        <a class="nav-item nav-link active" href="members.php?view=$user">Home <span class="sr-only">(current)</span></a>
-        <a class="nav-item nav-link" href="members.php">Members</a>
-        <a class="nav-item nav-link" href="friends.php">Friends</a>   
-        <a class="nav-item nav-link" href="messages.php">Messages</a>
-        <a class="nav-item nav-link" href="profile.php">Edit Profile</a>  
-        <a class="nav-item nav-link" href="logout.php">Log Out</a>
+    <div class='collapse navbar-collapse' id='navbarNavAltMarkup'>
+        <div class='navbar-nav'>
+        <a class='nav-item nav-link active' href='members.php?view=$user'>Home <span class='sr-only'>(current)</span></a>
+        <a class='nav-item nav-link' href='members.php'>Members</a>
+        <a class='nav-item nav-link' href='friends.php'>Friends</a>   
+        <a class='nav-item nav-link' href='messages.php'>Messages</a>
+        <a class='nav-item nav-link' href='profile.php'>Edit Profile</a>  
+        <a class='nav-item nav-link' href='logout.php'>Log Out</a>
         </div>
     </div>
     </nav>
-    ';
+    ";
 }
 else{
     echo '

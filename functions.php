@@ -36,8 +36,9 @@ function destroySession()
 }
 
 function show_profile($user){
-    if(file_exists('./static/images/profiles/$user.jpg')){
-        echo "<img src='./static/images/profiles/$user.jpg' style='float:left;'>";
+    global $DBH;
+    if(file_exists("static/images/profiles/$user.jpg")){
+        echo "<img class='img-thumbnail img-fluid mr-3' src='static/images/profiles/$user.jpg' style='float:left;'>";
     }
     $sql = "SELECT * FROM profiles WHERE user=:user";
     //preparing statememnts

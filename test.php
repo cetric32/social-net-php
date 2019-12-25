@@ -11,3 +11,16 @@ catch(PDOException $e){
 }
 echo 'connect';
 ?>
+
+<script>
+function checkUser(user){
+    if(user.value == ''){
+        $('$info').html('');
+    }
+    $.post('checkuser.php',{'user':user.value},function(resp,status){
+        if(status == 200){
+            $('$info').html(resp);
+        }
+    } );
+}
+</script>
