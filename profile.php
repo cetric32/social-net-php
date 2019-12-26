@@ -103,7 +103,7 @@ _END;
 ?>
 
 <label for="file">Profile Image:</label>
- <input class="file-control" type='file' name='image' id="file" size='14'><br>
+ <input class="form-control-file" type='file' name='image' id="file" size='14'><br>
 <input class="btn btn-secondary btn-lg" type='submit' value='Save Profile'>
 </form></div><br>
 </div>

@@ -31,7 +31,7 @@ if (isset($_GET['add']))
         $stmt->bindParam(':add',$add);
         $stmt->bindParam(':user',$user);
         $stmt->execute();
-        if(!$stmt->rowCont()){
+        if(!$stmt->rowCount()){
             $sql = "INSERT INTO friends VALUES (:add, :user)";
             $stmt = $DBH->prepare($sql);
             $stmt->bindParam(':add',$add);

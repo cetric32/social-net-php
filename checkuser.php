@@ -10,11 +10,11 @@ try{
     $stmt->bindParam(':user',$user);
     $stmt->execute();
     if($stmt->rowCount() > 0){
-        echo "<span class='taken text-info'>&nbsp;&#x2718; " .
+        echo "<span class='taken text-danger'>&nbsp;&#x2718; " .
                 "This username is taken</span>";
     }
     else{
-        echo "<span class='available text-danger'>&nbsp;&#x2714; " .
+        echo "<span class='available text-info'>&nbsp;&#x2714; " .
             "This username is available</span>";
     }
 }
