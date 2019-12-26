@@ -47,19 +47,20 @@ Type here to leave a message:<br>
 placeholder='your message...'
 ></textarea><br>
 
-<div class='form-check'>
+<div class='form-check form-check-inline'>
 <input type='radio' name='pm' id='public' value='0' checked='checked' class="form-check-input">
 <label class="form-check-label" for="public">
 Public
 </label>
 </div>
-<div class='form-check'>
+<div class='form-check form-check-inline'>
 <input type='radio' name='pm' id='private' value='1' class="form-check-input">
 <label class="form-check-label" for="private">
 Private
 </label>
 </div>
-<input class='btn btn-secondary' type='submit' value='Post Message'></form><br>
+<br>
+<input class='btn btn-secondary mt-3' type='submit' value='Post Message'></form><br>
 _END;
 
     if (isset($_GET['erase'])){
